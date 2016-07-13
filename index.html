@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <!-- 处理兼容问题  ie -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>手机微金所</title>
+    <!-- Bootstrap -->
+    <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!-- 覆盖 -->
+    <link rel="stylesheet" href="css/index.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!-- 让低版本的浏览器支持 的html5 -->
+    <!-- 让低版本的浏览器支持媒体查询 respond -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!-- 头部区域 -->
+    <header id="header">
+        <div class="topbar">
+            <!-- 版心 -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2">
+                        <a href="#" class="mark">
+                            <i class="icon-mobile"></i>
+                            <span>手机微金所</span>
+                            <i class="glyphicon glyphicon-chevron-down"></i>
+                            <img src="img/c_06.jpg" >
+                        </a>
+                    </div>
+                    <div class="col-md-5">
+                        <i class="icon-telephone"></i>
+                        <span>4006-89-4006（服务时间：9:00-21:00）</span>
+                    </div>
+                    <div class="col-md-2">
+                        <a href="#">常见问题</a>
+                        <a href="#">财富登录</a>
+                    </div>
+                    <div class="col-md-3">
+                        <button type="button" class="btn btn-danger btn-sm">免费注册</button>
+                        <button type="button" class="btn btn-link">登录</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 导航 -->
+        <nav class="navbar navbar-navbox">
+            <!-- container-fluid  100%满屏显示 -->
+            <!-- container   版心  宽度为1170px  居中 -->
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <!-- 当屏幕小时，适合手机模式  有个按钮   手风琴形式 -->
+                <div class="navbar-header">
+                    <!-- 当屏幕小到一定程度时，按钮显示 -->
+                    <!-- data-toggle  开关即为按钮 -->
+                    <!-- data-target   开关控制的目标对象 -->
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <!-- sr-only   screen  read 屏幕读取器 在页面没效果 -->
+                        <span class="sr-only">Toggle navigation</span>
+                        <!-- icon-bar   为开关按钮上的三条横杠 -->
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- logo和品牌  放logo的地方-->
+                    <a class="navbar-brand" href="#">
+                        <i class="icon-icon"></i>
+                        <i class="icon-logo"></i>
+                    </a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">我要贷款 <span class="sr-only">(current)</span></a></li>
+                        <li><a href="#">我要投资</a></li>
+                        <li><a href="#">平台介绍</a></li>
+                        <li><a href="#">新手专区</a></li>
+                        <li><a href="#">最新动态</a></li>
+                        <li><a href="#">微论坛</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">个人中心</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+    </header>
+    <!-- /头部区域 -->
+
+    <!-- 轮播图区域 -->
+    <section id="slide">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- 底部的小圆点 -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+            <!-- 每一个图片 -->
+                <div class="item active">
+                    <!-- 标题 -->
+                    <div class="carousel-caption">
+                        ...
+                    </div>
+                </div>
+                <div class="item ">
+                    <!-- <img src="img/slide_01_640x340.jpg"  > -->
+                    <!-- 标题 -->
+                    <div class="carousel-caption">
+                        ...
+                    </div>
+                </div>
+                <div class="item ">
+                    <!-- <img src="img/slide_03_640x340.jpg" > -->
+                    <!-- 标题 -->
+                    <div class="carousel-caption">
+                        ...
+                    </div>
+                </div>   
+                  <div class="item ">
+                    <!-- <img src="img/slide_03_640x340.jpg" > -->
+                    <!-- 标题 -->
+                    <div class="carousel-caption">
+                        ...
+                    </div>
+                </div>           
+            </div>
+            <!-- 控制轮播图的左按钮 -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <!-- 控制轮播图的右按钮 -->
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+    <!-- /轮播图区域 -->
+    <!-- 特色区域 -->
+    <section id="feature">
+    <div class="container">
+     <div class="row">
+         <div class="col-md-4 col-sm-6">     
+             <div class="media">
+                <a href="#">
+                  <div class="media-left">
+                    <i class="icon-uniE907"></i>
+                  </div>
+                  <div class="media-body">
+                    <h4 class="media-heading">支付交易保障</h4>
+                    <span>银联支付全称保证支付安全</span>
+                  </div>
+                </a>
+            </div>    
+        </div>
+         <div class="col-md-4 col-sm-6">     
+             <div class="media">
+                <a href="#">
+                  <div class="media-left">
+                    <i class="icon-uniE907"></i>
+                  </div>
+                  <div class="media-body">
+                    <h4 class="media-heading">支付交易保障</h4>
+                    <span>银联支付全称保证支付安全</span>
+                  </div>
+                </a>
+            </div>    
+        </div>
+         <div class="col-md-4 col-sm-6">     
+             <div class="media">
+                <a href="#">
+                  <div class="media-left">
+                    <i class="icon-uniE907"></i>
+                  </div>
+                  <div class="media-body">
+                    <h4 class="media-heading">支付交易保障</h4>
+                    <span>银联支付全称保证支付安全</span>
+                  </div>
+                </a>
+            </div>    
+        </div>
+         <div class="col-md-4 col-sm-6">     
+             <div class="media">
+                <a href="#">
+                  <div class="media-left">
+                    <i class="icon-uniE907"></i>
+                  </div>
+                  <div class="media-body">
+                    <h4 class="media-heading">支付交易保障</h4>
+                    <span>银联支付全称保证支付安全</span>
+                  </div>
+                </a>
+            </div>    
+        </div>
+         <div class="col-md-4 col-sm-6">     
+             <div class="media">
+                <a href="#">
+                  <div class="media-left">
+                    <i class="icon-uniE907"></i>
+                  </div>
+                  <div class="media-body">
+                    <h4 class="media-heading">支付交易保障</h4>
+                    <span>银联支付全称保证支付安全</span>
+                  </div>
+                </a>
+            </div>    
+        </div>
+         <div class="col-md-4 col-sm-6">     
+             <div class="media">
+                <a href="#">
+                  <div class="media-left">
+                    <i class="icon-uniE907"></i>
+                  </div>
+                  <div class="media-body">
+                    <h4 class="media-heading">支付交易保障</h4>
+                    <span>银联支付全称保证支付安全</span>
+                  </div>
+                </a>
+            </div>    
+        </div>
+    </div>
+    </div>
+
+    </section>
+    <!-- /特色区域 -->
+    <!-- 立即预约区域 -->
+    <section id="booking">
+         <div class="container">
+              <div class="pull-left">
+                <i class="icon-uniE906"></i>
+                    现在有<span>458</span>人在排队，累计预约交易成功<span>7409</span>次。 什么是预约投标？ <a href="#">立即预约</a>
+                </div>
+                <div class="pull-right"> 
+                <a href="#">
+                     <i class="icon-uniE905"></i>
+                    <span>微金所企业宣传片</span>
+                </a>
+                 
+                </div>
+         </div>
+    </section>
+    <!-- /立即预约区域 -->
+    <!-- 产品推荐 -->
+    <section id="products">
+    <div class="container">
+        <!-- Nav tabs 标题栏-->
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#product1" aria-controls="product1" role="tab" data-toggle="tab">特别推荐</a></li>
+            <li role="presentation"><a href="#product2" aria-controls="product2" role="tab" data-toggle="tab">微投资</a></li>
+            <li role="presentation"><a href="#product3" aria-controls="product3" role="tab" data-toggle="tab">微借贷 </a></li>
+            <li role="presentation"><a href="#product4" aria-controls="product4" role="tab" data-toggle="tab">微小宝</a></li>
+             <li role="presentation" class="pull-right"><a href="#more" aria-controls="product4" role="tab" data-toggle="tab">more</a></li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="product1">
+            <!-- 第一块面板 -->
+            <div class="row">
+               <div class="col-md-4 col-sm-6">
+                    <div class="panel panel-default red">
+                        <div class="panel-heading text-center">
+                            <h3 class="panel-title">
+                                <strong>8</strong>
+                                <sub>%</sub>
+                                <p>年利率</p>
+                            </h3>
+                        </div>
+                        <div class="panel-body">
+                            <h4>新手体验版</h4>
+                        </div>
+                    </div>     
+               </div> 
+               <div class="col-md-4 col-sm-6">
+                    <div class="panel panel-default ">
+                        <div class="panel-heading text-center">
+                            <h3 class="panel-title">
+                                <strong>8</strong>
+                                <sub>%</sub>
+                                <p>年利率</p>
+                            </h3>
+                        </div>
+                        <div class="panel-body">
+                            <h4>新手体验版</h4>
+                        </div>
+                    </div>     
+               </div> 
+                <div class="col-md-4 col-sm-6">
+                    <div class="panel panel-default ">
+                        <div class="panel-heading text-center">
+                            <h3 class="panel-title">
+                                <strong>8</strong>
+                                <sub>%</sub>
+                                <p>年利率</p>
+                            </h3>
+                        </div>
+                        <div class="panel-body">
+                            <h4>新手体验版</h4>
+                        </div>
+                    </div>     
+               </div>            
+
+            </div>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="product2">    
+        <div class="col-md-4 col-sm-6">
+            <div class="panel panel-default ">
+                <div class="panel-heading text-center">
+                    <h3 class="panel-title">
+                        <strong>8</strong>
+                        <sub>%</sub>
+                        <p>年利率</p>
+                    </h3>
+                </div>
+                <div class="panel-body">
+                    <h4>新手体验版</h4>
+                </div>
+            </div>     
+        </div> 
+        </div>
+            <div role="tabpanel" class="tab-pane" id="product3">...</div>
+            <div role="tabpanel" class="tab-pane" id="product4">...</div>
+        </div>
+    </div>
+    </section>
+    <!-- /产品推荐 -->
+    <section></section>
+    <footer></footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="lib/jquery/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="lib/bootstrap/js/bootstrap.js"></script>
+</body>
+
+</html>

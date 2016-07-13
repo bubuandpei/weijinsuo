@@ -1,0 +1,387 @@
+/* 1.尽可能多的使用id  更加精确*/
+
+
+/* 2.直接子代选择器 */
+
+
+/* 引入的bootstrap的有初始的默认样式 改变时要覆盖重新设置 
+但不要再原始上修改 复制要修改的那块代码 在自己 的css中修改   一定要修改名字 */
+
+body {
+    font-size: 12px;
+    font-family: "microsoft yahei";
+}
+
+
+    /* 自定义字体 */
+
+@font-face {
+    font-family: 'itcast';
+    src: url(../fonts/MiFie-Web-Font.eot) format("embedded-opentype"), url(../fonts/MiFie-Web-Font.ttf) format("truetype"), url(../fonts/MiFie-Web-Font.svg) format("svg"), url(../fonts/MiFie-Web-Font.woff) format("woff");
+}
+
+
+/* 属性选择器 */
+
+[class^="icon-"],
+[class*=" icon-"] {
+    font-style: normal;
+    font-family: "itcast";
+}
+
+.icon-mobile:before {
+    content: "\e908";
+}
+
+.icon-telephone:before {
+    content: "\e909";
+}
+
+.icon-icon:before {
+    content: "\e920";
+    font-size: 50px;
+    color: #e92322;
+    vertical-align: middle;
+    line-height: 50px;
+}
+
+.icon-logo:before {
+    content: "\e93e";
+    font-size: 28px;
+    vertical-align: middle;
+    color: #000;
+}
+
+.icon-uniE907:before{
+    content: '\e907';
+    font-size: 28px;
+}
+.icon-uniE906:before{
+    content: "\e906";
+}
+.icon-uniE905:before{
+    content: "\e905";
+}
+/* 头部 */
+
+.topbar {
+    border-bottom: 1px solid #CCC;
+}
+
+.topbar .container .row {
+    height: 40px;
+    line-height: 40px;
+    color: #777;
+}
+
+.topbar .container .row>div {
+    height: 40px;
+    border-left: 1px solid #CCC;
+    font-size: 12px;
+    text-align: center;
+}
+
+.topbar .container .row>div>a {
+    color: #777;
+}
+
+.topbar .container .row>div>a>img{
+    position: absolute;
+    top: 27px;
+    left: 50%;
+    margin-left: -60px;
+    z-index: 1;
+    display: none;
+}
+.topbar .container .row>div>a:hover >img{
+    display: block;
+
+}
+.topbar .container .row>div:first-child {
+    border: 0 none;
+}
+
+.topbar .container .row>div>button:nth-child(2) {
+    color: #666;
+}
+
+
+/* 导航栏修改 */
+
+.navbar-navbox {
+    /* background-color: #f8f8f8; */
+    /* border-color: #e7e7e7; */
+    margin-bottom: 0;
+}
+
+.navbar-navbox .navbar-brand {
+    color: #777;
+}
+
+.navbar-navbox .navbar-brand:hover,
+.navbar-navbox .navbar-brand:focus {
+    color: #5e5e5e;
+    background-color: transparent;
+}
+
+.navbar-navbox .navbar-text {
+    color: #777;
+}
+
+.navbar-navbox .navbar-nav > li > a {
+    color: #777;
+    line-height: 48px;
+     border-bottom: 2px solid transparent;
+}
+
+.navbar-navbox .navbar-nav > li > a:hover,
+.navbar-navbox .navbar-nav > li > a:focus {
+    color: #333;
+    background-color: transparent;
+    border-bottom: 2px solid #e92322;
+}
+
+.navbar-navbox .navbar-nav > .active > a,
+.navbar-navbox .navbar-nav > .active > a:hover,
+.navbar-navbox .navbar-nav > .active > a:focus {
+    color: #555;
+}
+
+.navbar-navbox .navbar-nav > .disabled > a,
+.navbar-navbox .navbar-nav > .disabled > a:hover,
+.navbar-navbox .navbar-nav > .disabled > a:focus {
+    color: #ccc;
+    background-color: transparent;
+}
+
+.navbar-navbox .navbar-toggle {
+    border-color: #ddd;
+    }
+
+.navbar-navbox .navbar-toggle:hover,
+.navbar-navbox .navbar-toggle:focus {
+    background-color: #ddd;
+}
+
+.navbar-navbox .navbar-toggle .icon-bar {
+    background-color: #888;
+}
+
+.navbar-navbox .navbar-collapse,
+.navbar-navbox .navbar-form {
+    border-color: #e7e7e7;
+}
+
+.navbar-navbox .navbar-nav > .open > a,
+.navbar-navbox .navbar-nav > .open > a:hover,
+.navbar-navbox .navbar-nav > .open > a:focus {
+    color: #555;
+    background-color: #e7e7e7;
+}
+
+@media (max-width: 767px) {
+    .navbar-navbox .navbar-nav .open .dropdown-menu > li > a {
+        color: #777;
+    }
+    .navbar-navbox .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-navbox .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #333;
+        background-color: transparent;
+    }
+    .navbar-navbox .navbar-nav .open .dropdown-menu > .active > a,
+    .navbar-navbox .navbar-nav .open .dropdown-menu > .active > a:hover,
+    .navbar-navbox .navbar-nav .open .dropdown-menu > .active > a:focus {
+        color: #555;
+        background-color: #e7e7e7;
+    }
+    .navbar-navbox .navbar-nav .open .dropdown-menu > .disabled > a,
+    .navbar-navbox .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+    .navbar-navbox .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+        color: #ccc;
+        background-color: transparent;
+    }
+}
+
+.navbar-navbox .navbar-link {
+    color: #777;
+}
+
+.navbar-navbox .navbar-link:hover {
+    color: #333;
+}
+
+.navbar-navbox .btn-link {
+    color: #777;
+}
+
+.navbar-navbox .btn-link:hover,
+.navbar-navbox .btn-link:focus {
+    color: #333;
+}
+
+.navbar-navbox .btn-link[disabled]:hover,
+fieldset[disabled] .navbar-navbox .btn-link:hover,
+.navbar-navbox .btn-link[disabled]:focus,
+fieldset[disabled] .navbar-navbox .btn-link:focus {
+    color: #ccc;
+}
+/* 轮播图 */
+.carousel-inner{
+    width: 100%;
+    height: 410px;
+}
+
+.carousel-inner .item:nth-child(1){
+    background: url(../img/slide_01_2000x410.jpg) center center no-repeat;
+    width: 100%;
+    height: 100%;
+}
+.carousel-inner .item:nth-child(2){
+    background: url(../img/slide_02_2000x410.jpg) center center no-repeat;
+    width: 100%;
+    height: 100%;
+   
+}
+.carousel-inner .item:nth-child(3){
+    background: url(../img/slide_03_2000x410.jpg) center center no-repeat;
+    width: 100%;
+    height: 100%; 
+}
+.carousel-inner .item:nth-child(4){
+    background: url(../img/slide_04_2000x410.jpg) center center no-repeat;
+    width: 100%;
+    height: 100%; 
+}
+
+/* 特点 */
+#feature{
+    border-bottom: 1px solid #c0c0c0;
+}
+#feature .container{
+    padding: 30px 0px;
+}
+#feature .container .media{
+    margin-bottom: 20px;
+}
+#feature .container .media a{
+    text-decoration: none;
+}
+#feature .container .media a:hover{
+    color: #e92322;
+};
+
+/* 预定 */
+#booking  {
+  border-bottom: 1px solid #c0c0c0;
+
+}
+#booking .container{
+  padding: 20px 0px;
+
+}
+#booking .container .pull-left a{
+    text-decoration: none;
+    color: #e92322;
+    border-bottom: 1px dashed #e92322;
+}
+#booking .container  .pull-left span{
+    color: #e92322;
+}
+
+/* 产品区域 */
+#products {
+    background-color: #c0c0c0;
+    padding: 30px 0px;
+}
+#products  .nav-tabs > li > a{
+    border: 0 none;
+    border-bottom: 2px solid transparent;
+}
+
+#products .nav-tabs > li.active > a{
+    background-color: transparent;
+    border: none;
+}
+
+#products .nav > li > a:hover{
+     background-color: transparent;
+     border: none;
+}
+#products .nav > li > a:focus{
+    background-color:transparent;
+    border-bottom: 2px solid #e92322;
+}
+/* 面板区域 */
+#products .tab-content{
+    padding: 20px 0px;
+}
+
+#products .panel-default.red{
+    color: #fff; 
+}
+#products .panel-default.red  .panel-heading{
+    float: right;
+    height: 160px;
+    width: 120px;
+    border-left: 1px dashed #c0c0c0;
+    position: relative;
+    background-color: #e92322;   
+}
+#products .panel-default  .panel-heading{
+    float: right;
+    height: 160px;
+    width: 120px;
+    border-left: 1px dashed #c0c0c0;
+    position: relative;
+     
+}
+#products .panel-default.red .panel-heading .panel-title{
+    padding: 30px 0px;
+    color: #fff;    
+}
+#products .panel-default .panel-heading .panel-title{
+    padding: 30px 0px;
+  
+}
+#products .panel-default .panel-heading .panel-title strong{
+    font-size: 28px;
+
+}
+#products .panel-default  .panel-heading .panel-title p{
+    margin-top: 10px;
+}
+#products .panel-default .panel-heading:before,
+#products .panel-default .panel-heading:after{
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #c0c0c0;
+    border-radius: 5px;
+    position: absolute;
+    left: -5px;
+
+}
+#products .panel-default .panel-heading:before{
+    top:-5px;
+}
+#products .panel-default .panel-heading:after{
+    bottom: -5px;
+}
+#products .panel-default.red .panel-body{
+    margin-right: 120px;
+    height: 160px;
+     background-color: #e92322;
+}
+#products .panel-default .panel-body{
+    margin-right: 120px;
+    height: 160px;
+  
+}
+#products .panel-default .panel-body:before{
+    content: "\e915";
+    font-family:"itcast";
+    position: absolute;
+    top: -5px;
+    left: 15px;
+    font-size: 28px;
+}
